@@ -1,5 +1,5 @@
-import DashboardLanding from "../dashboard-landing"
+import LoginPage from "../login-page"
 
 export default function Page() {
-  return <DashboardLanding />
+  return <LoginPage />
 }
