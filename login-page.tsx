@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { LogIn } from "lucide-react"
+import { signIn } from "next-auth/react"   // ← これを追加
 
 export default function LoginPage() {
   return (
@@ -14,6 +15,7 @@ export default function LoginPage() {
         <div className="pt-6">
           <Button
             size="lg"
+            onClick={() => signIn("google")}  // ← これを追加！
             className="h-12 px-8 bg-black hover:bg-gray-800 text-white w-full max-w-xs mx-auto flex items-center justify-center gap-2"
           >
             <LogIn className="h-5 w-5" />
